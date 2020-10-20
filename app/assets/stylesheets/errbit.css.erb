@@ -4,6 +4,68 @@ html {
   background-color: #4c4c4c;
   font-size: 62.8%; font-family: Helvetica, "Lucida Grande","Lucida Sans",Arial,sans-serif;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {color: #ffffff; background-color: #4c4c4c;}
+  h1 {text-shadow: 1px 1px 0px #a0a0a0; -webkit-text-shadow: 1px 1px 0px #a0a0a0;}
+  a         { color: #069fe8;}
+  a:visited { color: #069fe8;}
+  a:hover   { color: #069fe8;}
+  #header {border-bottom: 1px solid #7d7d7d;}
+  #nav-bar li {color: #c4c4c4;background-color: #000;}
+  #nav-bar li.active {background: #000 url(<%= asset_path "images/button-bg.png" %>) 0 -2px repeat-x;}
+  #nav-bar li.active a {color: #000;text-shadow: 1px 1px 0px #c4c4c4;}
+  #nav-bar li a {color: #fff;text-shadow: 1px 1px 0px #808080; -webkit-text-shadow: 1px 1px 0px #808080;}
+  #nav-bar li a:hover { color: #c4c4c4;}
+  #content-wrapper {border: 1px solid #4c4c4c;}
+  #content-title, #content-comments {border-top: 1px solid #616161;border-bottom: 1px solid #616161;background-color: #313131;}
+  #content-comments {background-color: #313131;}
+  #content-title h1, #content-comments h3 {color: #fff;}
+  #content {border-top: 1px solid #616161;background-color: #404040;}
+  #flash-messages li.notice {background-color: #3c9cb9;}
+  #flash-messages li.success {background: #299637 url(<%= asset_path "images/icons/success.png" %>) 16px 50% no-repeat;}
+  form fieldset {background-color: #c4c4c4;}
+  form fieldset legend {color: #4c4c4c;}
+  form input[type=submit] {color: #4c4c4c; background-color: #e2e2e2;}
+  table {border: 1px solid #2a2a2a;}
+  table th, table td {border-top: 1px solid #2a2a2a;}
+  table thead + tbody tr:first-child td {border-top: 1px solid #3a3a3a;}
+  table th { background-color: #3a3a3a;}
+  table tbody tr:nth-child(odd) td { background-color: #4a4a4a;}
+  table.single_user {text-shadow: 0 1px 0 #717171;}
+  #content .tab-bar a.button.active {background: #4c4c4c;color: #fff;border-color:#525252;}
+  div.issue_tracker.nested label.label_radio:hover, div.notification_service.nested label.label_radio:hover {color: #888888;}
+  table.apps tbody tr:hover td ,table.errs tbody tr:hover td { background-color: #000;}
+  table.tally th.value {border:1px solid #4a4a4a;}
+
+}
+
+@media (prefers-color-scheme: light) {
+  html {color: #585858 !important; background-color: #e6e6e6 !important;}
+  h1 {text-shadow: 1px 1px 0px #FFF !important; -webkit-text-shadow: 1px 1px 0px #FFF !important;}
+  #header {border-bottom: 1px solid #e4e3e3 !important;}
+  #content-wrapper {border: 1px solid #C6C6C6 !important;}
+  #content-title, #content-comments {border-top: 1px solid #FFF !important;border-bottom: 1px solid #FFF !important;background-color: #f2f2f2 !important;}
+  #content-comments {background-color: #ffffff !important;}
+  #content-title h1, #content-comments h3 {color: #636363 !important;}
+  #content {border-top: 1px solid #C6C6C6;background-color: #FFF !important;}
+  #flash-messages li.notice {background-color: #b5eeff !important;}
+  #flash-messages li.success {background: #cfc url(<%= asset_path "images/icons/success.png" %>) 16px 50% no-repeat !important;}
+  form fieldset {background-color: #F0F0F0 !important;}
+  form fieldset legend {color: #555 !important;}
+  form input[type=submit] {color: #FFF !important; background-color: #387fc1 !important;}
+  table {border: 1px solid #C6C6C6 !important;}
+  table th, table td {border-top: 1px solid #C6C6C6 !important;}
+  table thead + tbody tr:first-child td {border-top: 1px solid #C6C6C6 !important;}
+  table th { background-color: #ececec !important;}
+  table tbody tr:nth-child(odd) td { background-color: #F9F9F9 !important;}
+  table.single_user {text-shadow: 0 1px 0 #fff !important;}
+  #content .tab-bar a.button.active {background: #FFF !important;color: #444;border-color:#ccc !important;}
+  div.issue_tracker.nested label.label_radio:hover, div.notification_service.nested label.label_radio:hover {color: #696969 !important;}
+  table.apps tbody tr:hover td ,table.errs tbody tr:hover td { background-color: #F2F2F2 !important;}
+  table.tally th.value {border:1px solid #ccc !important;}
+}
+
 body {
   margin: 0; padding: 0;
   font-size: 1.3em; line-height: 1.4em;
